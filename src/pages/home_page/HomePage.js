@@ -42,27 +42,32 @@ export default function Home() {
                     <a
                       href="https://github.com/SangayZin"
                       target="_blank"
-                      rel="noreferrer"
-                      className="iconcolour  homesocialicons"
+                      rel="noopener noreferrer"
+                      className="iconcolour homesocialicons"
                     >
                       <AiFillGithub />
                     </a>
                   </li>
                   <li className="socialicons">
-                    <a
-                      href=""
-                      target="_blank"
-                      rel="noreferrer"
-                      className="iconcolour  homesocialicons"
+                    {/* Either add valid LinkedIn URL or use button */}
+                    <button
+                      className="iconcolour homesocialicons"
+                      style={{
+                        background: "none",
+                        border: "none",
+                        padding: 0,
+                        cursor: "pointer"
+                      }}
+                      onClick={() => window.open("https://linkedin.com", "_blank")}
                     >
                       <FaLinkedinIn />
-                    </a>
+                    </button>
                   </li>
                   <li className="socialicons">
                     <a
                       href="https://www.instagram.com/sangs_zin?igsh=NWh5MXI0bGpkbTdm"
                       target="_blank"
-                      rel="noreferrer"
+                      rel="noopener noreferrer"
                       className="iconcolour homesocialicons"
                     >
                       <AiFillInstagram />
@@ -72,7 +77,7 @@ export default function Home() {
                     <a
                       href="https://www.facebook.com/share/1ByGdWFH6v/"
                       target="_blank"
-                      rel="noreferrer"
+                      rel="noopener noreferrer"
                       className="iconcolour homesocialicons"
                     >
                       <FaFacebookF />
@@ -80,9 +85,7 @@ export default function Home() {
                   </li>
                   <li className="socialicons">
                     <a
-                      href="mailto:mdtonmoy13.mt@gmail.com/"
-                      target="_blank"
-                      rel="noreferrer"
+                      href="mailto:02230298.cst@rub.edu.bt"
                       className="iconcolour homesocialicons"
                     >
                       <FaGoogle />
@@ -97,7 +100,7 @@ export default function Home() {
                   <Fade cascade>
                     <img
                       src="./profile.jpg"
-                      alt="home pic"
+                      alt="Sangay Tenzin"
                       className="img-fluid"
                     />
                   </Fade>

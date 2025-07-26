@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { Navbar, Nav, Container, Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { CgGitFork } from "react-icons/cg";
-import { ImBlog } from "react-icons/im";
 import {
   AiFillStar,
   AiOutlineHome,
@@ -34,7 +33,7 @@ export default function MyNav() {
       className={navColour ? "sticky" : "navbar"}
     >
       <Container>
-        <Navbar.Brand href="/">
+        <Navbar.Brand as={Link} to="/">
           <div className="d-flex flex-row justify-content-between">
             <img src="./profile.jpg" className="img-fluid logo" alt="brand" />
             <h5
@@ -104,6 +103,7 @@ export default function MyNav() {
               <Button
                 href="https://github.com/SangayZin"
                 target="_blank"
+                rel="noopener noreferrer"
                 className="fork-btn-inner"
               >
                 <CgGitFork style={{ fontSize: "1.2em" }} />{" "}

@@ -28,14 +28,19 @@ function Footer() {
               </a>
             </li>
             <li className="social-icons">
-              <a
-                href=""
-                style={{ color: "white" }}
-                target="_blank"
-                rel="noopener noreferrer"
+              {/* Either add a valid LinkedIn URL or replace with button */}
+              <button
+                className="icon-button"
+                style={{ 
+                  color: "white", 
+                  background: "none", 
+                  border: "none",
+                  padding: 0
+                }}
+                onClick={() => window.open("https://linkedin.com", "_blank")}
               >
                 <FaLinkedinIn />
-              </a>
+              </button>
             </li>
             <li className="social-icons">
               <a
@@ -59,10 +64,8 @@ function Footer() {
             </li>
             <li className="social-icons">
               <a
-                href="02230298.cst@rub.edu.bt"
+                href="mailto:02230298.cst@rub.edu.bt"
                 style={{ color: "white" }}
-                target="_blank"
-                rel="noopener noreferrer"
               >
                 <FaGoogle />
               </a>
