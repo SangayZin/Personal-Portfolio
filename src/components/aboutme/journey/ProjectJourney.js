@@ -6,8 +6,6 @@ import {
 import { Link } from "react-router-dom";
 import StarIcon from "@mui/icons-material/Star";
 import JavascriptIcon from '@mui/icons-material/Javascript';
-import CssIcon from '@mui/icons-material/Css';
-import HtmlIcon from '@mui/icons-material/Html';
 import CodeIcon from '@mui/icons-material/Code';
 import Flip from "react-reveal/Flip";
 
