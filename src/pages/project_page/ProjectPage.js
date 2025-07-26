@@ -293,7 +293,7 @@ export default function ProjectPage() {
                                 <div className="project--showcaseBtn">
                                   <a
                                     href={
-                                      "https://github.com/SangayZin/SDA101-final"
+                                      "https://github.com/SangayZin/Personal-Portfolio"
                                     }
                                     target="_blank"
                                     rel="noreferrer"
